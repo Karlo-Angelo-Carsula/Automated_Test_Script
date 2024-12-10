@@ -51,11 +51,11 @@ def validate_fields(driver):
         print(f"Error: {e}")
 
 # Setup WebDriver (Chrome) using Service
-service = Service(executable_path="C:\\Users\\Gelo\\Desktop\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe")  # Update path to chromedriver
+service = Service(executable_path="C:\\Users\\Gelo\\Desktop\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe") 
 driver = webdriver.Chrome(service=service)
 
 # Open the HTML file (use a local path or URL)
-driver.get("file:///C:/Users/Gelo/test.html")  # Replace with the path to your local HTML form
+driver.get("file:///C:/Users/Gelo/test.html")
 
 # Validate fields
 validate_fields(driver)
